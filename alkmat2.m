@@ -133,8 +133,13 @@ C = [1:3, 4:5]
 max(C,3) % Mindet hasonlítja 3-al és a nagyobbat hagyja meg
 max(C,4)
 
+diag(1:4) % Főátlóba beteszi ezt a vektort
+diag(1:4, 0) % 0. átló
+diag(1:4, 2) % 2. átló
+diag(1:4, -2) % -2. átló
 
-
+tril(A) % Alsó háromszög, kinullázza a többi részt
+triu(A) % Felső háromszög
 
 
 

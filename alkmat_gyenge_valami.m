@@ -93,6 +93,19 @@ xx = linspace(0.9, 2.1);
 yy = polyval(p, xx);
 figure; plot(t, f,'*', xx, yy)
 
+# pkg load io
+##Salary = table2array(xlsread('C:\Users\student\Downloads\salary.xlsx')); # Matlab
+salary = xlsread('C:\Users\student\Downloads\salary.xlsx'); # Octave
+plot(salary(:,1), salary(:,2), 'b-');
+hold on;
+
+plot(salary(:,1),
+    polyval(
+      polyfit(salary(:,1), salary(:,2), 1)
+      ),
+    salary(:,1), 'r-');
+
+
 
 
 

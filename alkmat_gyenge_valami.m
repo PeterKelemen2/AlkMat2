@@ -89,6 +89,10 @@ p = polyfit(t,f,1) # Kiírja, hogy: 5.8235   2.5338;
 # meredekdség / főegyüttható: p(1)
 # konstans tag: p(2)
 
+xx = linspace(0.9, 2.1);
+yy = polyval(p, xx);
+figure; plot(t, f,'*', xx, yy)
+
 
 
 

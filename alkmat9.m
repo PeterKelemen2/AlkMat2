@@ -37,7 +37,7 @@ f_p = [1 -1 -2 -2 4]; # Mert ez csak egy sima polinom
 clc;clear;
 f = @(x) [x(1)^2 + 2*x(2)^2/x(1) - 5,
 		  x(2)^2 - x(1)*x(2) + 1];
-x0 =0 ;
+x0 =[1,1];
 [gyok, fvertek] = fsolve(f, x0)
 
 
